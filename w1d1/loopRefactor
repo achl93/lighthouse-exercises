@@ -1,0 +1,12 @@
+function loopyLighthouse() {
+  for (var i = 100; i <= 200; i++) {
+    var tmp = "";
+    if (i % 3 === 0) {
+      tmp += "Loopy";
+    }
+    if (i % 4 === 0) {
+      tmp += "Lighthouse";
+    }
+    console.log(tmp === "" ? i : tmp);
+  }
+}
