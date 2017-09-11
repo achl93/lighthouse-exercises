@@ -18,4 +18,4 @@ function getAndPrintHTMLChunks () {
   });
 }
 
-getAndPrintHTMLChunks ()
+getAndPrintHTMLChunks ();
