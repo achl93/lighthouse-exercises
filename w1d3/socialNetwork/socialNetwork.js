@@ -85,11 +85,19 @@ var socialNetwork = {
   },
 
   mostFollows: function () {
+    var topDog = '';
+    var currMost = 0;
     for (Id in this.data) {
-      
+      if (this.data[Id].follows.length >= currMost) {
+        topDog = this.data[Id].name;
+        currMost = this.data[Id].follows.length;
+      }
     }
+    // console.log(topDog);
+    return topDog;
   }
 }
 
-socialNetwork.profileInfo("f06");
+// socialNetwork.profileInfo("f06");
+socialNetwork.mostFollows();
 // socialNetwork.getFollowers("f06");
