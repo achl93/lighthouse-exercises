@@ -46,7 +46,7 @@ const myPlaylist = new Playlist('Best Playlist');
 const hotTrack = new Track('Fire', 5, 240);
 myPlaylist.addTrack(hotTrack);
 const lameTrack = new Track('Lame', 1, 260);
-myPlaylist.addTrack(dankTrack);
+myPlaylist.addTrack(lameTrack);
 console.log(myPlaylist);
 myPlaylist.overallRating();
 myPlaylist.totalDuration();
